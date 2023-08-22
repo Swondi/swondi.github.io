@@ -1,0 +1,116 @@
+
+.pulse {
+    transform: scale(1);
+    transform-origin: center;
+    animation: pulse-animation var(--long-time) ease infinite;
+}
+
+@keyframes pulse-animation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Animation for the highlight section */
+.highlight-animation .highlight {
+    color: var(--light-font-color);
+    font-weight: normal;
+    transition: all var(--medium-time);
+}
+
+.highlight-animation:hover {
+    color: var(--icon-not-selected);
+}
+
+/* Automatic highlight section (for touch devices) */
+.highlight-animation-touch .highlight {
+    color: var(--light-font-color) !important;
+    font-weight: normal !important;
+    transition: all var(--medium-time) !important;
+}
+
+.highlight-animation-touch {
+    color: var(--icon-not-selected) !important;
+}
+
+
+/* Navbar button extension */
+@media screen and (min-width: 450px) {
+    .animation-on-text:hover::after {
+        content: 'Animation - ON';
+        padding-left: 1rem;
+    }
+    
+    .animation-off-text:hover::after {
+        content: 'Animation - OFF';
+        padding-left: 1rem;
+    }   
+}
+
+/* Text hover animation */
+.text-borderline:after {
+    content: '';
+
+    display: inline-block;    
+    width: 100%;
+
+    border-bottom: 1px solid;
+    opacity: 0;
+
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+  
+.text-borderline:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* Light and Dark mode animation */
+#navbar .navbar-toggle .icon:hover {
+    animation: pulse-animation var(--medium-time) ease-in-out infinite;
+}
+
+#navbar #dark-mode:hover {
+    color: var(--moon-color);
+}
+
+
+#navbar #light-mode:hover {
+    color: var(--sun-color);
+
+}
+
+/* Pulse color animation */
+@keyframes highlightFadeIcons {
+    from {
+      color: var(--highlight-color);
+    }
+    to {
+      color: var(--light-font-color);
+    }
+}
+
+@keyframes highlightFadeFooter {
+    from {
+        background-color: var(--icon-not-selected);
+    }
+    to {
+        background-color: var(--background-1-color);
+    }
+}
+
+.pulse-animation-icon {
+    animation: highlightFadeIcons 2s ease-out forwards;
+}
+
+.pulse-animation-footer {
+    animation: highlightFadeFooter 2s ease-out forwards;
+}

@@ -1,0 +1,15 @@
+{
+    "short_name": "Swondi",
+    "name": "Swondi",
+    "icons": [
+    {
+      "src":"./assets/logo/light-logo.png",
+      "sizes": "1028x1025",
+      "type": "image/png"
+    }
+   ],
+   "start_url": "/",
+   "background_color": "#1b1b1b",
+   "Theme_color": "#000000",
+   "display": "standalone"
+}

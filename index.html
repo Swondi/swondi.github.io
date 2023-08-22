@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./animation.css">
+    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="icon" type="image/x-icon" href="/assets/logo/light-logo.png">
+    <link rel="manifest" href="/manifest.json">
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script defer src="./script.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon...</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand is-flex is-align-items-center">
+            <a id='navbar-logo' href="#">
+                <figure class="image is-32x32 m-4">
+                    <img src="./assets/logo/light-logo.png">
+                </figure>
+            </a>
+            <h2 class="is-uppercase font-text">swondi</h2>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbar-menu" class="navbar-menu">
+            <div class="navbar-end is-flex is-justify-content-flex-end">
+                <div class="navbar-item">
+                    <a id='contact-us' class="button navbar-button" href="#footer">
+                        Contact
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="button navbar-toggle">
+                        <span id="dark-mode" class="icon">
+                            <i class="las la-moon"></i>
+                        </span>
+                        <span class="button-divider"></span>
+                        <span id="light-mode" class="icon icon-toggled">
+                            <i class="las la-sun"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="button navbar-button" href="#about-section">
+                        About
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="is-flex is-align-items-center is-justify-content-center is-clipped">
+        <div id="background-circle" class="is-unselectable is-hidden-mobile pulse"></div>
+        <section id="coming-soon-section" class="is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+            <h1 id="company-title" class="has-text-centered is-uppercase font-text">swondi</h1>
+            <h2 class="has-text-centered title font-text is-uppercase mb-6">coming soon</h2>
+            <div class="is-flex is-align-items-center is-justify-content-center">
+                <div id="countdown" class="is-flex font-text">
+                    <div class="is-flex is-flex-direction-column is-align-items-center">
+                        <div id="days" class="general-text has-text-weight-bold"></div>
+                        <div class="is-uppercase text-borderline">Days</div>
+                    </div>
+                    <div class="is-flex is-flex-direction-column is-align-items-center">
+                        <div id="hours" class="general-text has-text-weight-bold"></div>
+                        <div class="is-uppercase text-borderline">Hours</div>
+                    </div>
+                    <div class="is-flex is-flex-direction-column is-align-items-center">
+                        <div id="minutes" class="general-text has-text-weight-bold"></div>
+                        <div class="is-uppercase text-borderline">Minutes</div>
+                    </div>
+                    <div class="is-flex is-flex-direction-column is-align-items-center">
+                        <div id="seconds" class="general-text has-text-weight-bold"></div>
+                        <div class="is-uppercase text-borderline">Seconds</div>
+                    </div>
+                </div>
+            </div>
+            <div id="background-line" class="is-clickable mt-5 p-2 is-hidden-tablet general-text pulse" data-text="" data-date=""></div>
+
+            <div class="learn-more general-text">
+                <a href="#about-section"><i class="las la-arrow-down" href="#about-section"></i></a>
+            </div>
+        </setion>
+    </div>
+    <section id="about-section" class="m-0">
+        <div id="particles-js"></div>
+        <img src="./assets/background/dark-background-overlay-1.svg" class="is-unselectable background-overlay">
+        <div class="columns is-multiline m-0">
+            <div class="column is-full-touch is-half">
+                <h2 class="title is-uppercase about-title font-text mb-6">Who we are</h2>
+                <p class="about-text general-text highlight-animation">
+                    Welcome to Swondi, <span class="highlight">your go-to destination for top-notch website and web application</span> development services.
+                    We are starting as a dynamic team of three talented individuals, hailing from the picturesque regions of Italy and currently living in the
+                    vibrant landscapes of Florida. Together, <span class="highlight">we bring</span> a unique blend of creativity, <span class="highlight">technical expertise, and a
+                    passion for crafting digital solutions</span> that elevate businesses to new heights.
+                </p>
+            </div>
+            <div class="column is-half-desktop is-hidden-touch"></div>
+            <div class="column is-half-desktop is-hidden-touch"></div>
+            <div class="column is-full-touch is-half">
+                <h2 class="title is-uppercase about-title font-text mb-6">Our Story</h2>
+                <p class="about-text general-text highlight-animation">
+                    Swondi is the embodiment of <span class="highlight">a shared dream among three ambitious minds: to make an unmistakably positive impact
+                    in the realm of technology</span>. With each team member contributing a unique set of skills, experiences, and cultural
+                    perspectives, we strive to create a harmonious fusion that breathes life and innovation into every project we
+                    undertake. Our unwavering commitment to a brighter technological landscape drives us forward with determination
+                    and purpose. <span class="highlight">Together, we can fix any problem you throw at us, empowering your vision and achieving extraordinary results.</span>
+                </p>
+            </div>
+            <div class="column is-full-touch is-half">
+                <h2 class="title is-uppercase about-title font-text mb-6">Our Expertise</h2>
+                <p class="about-text general-text highlight-animation">
+                    With more than 15 years combined of experience, we have honed our craft in crafting bespoke websites and
+                    cutting-edge web applications. <span class="highlight">
+                    We believe that every brand and business is distinct, and thus, deserves a
+                    tailored online presence that resonates with their target audience.
+                    </span> From eye-catching designs to seamless user
+                    experiences, we pay meticulous attention to detail at every step of the development process.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer id='footer' class="is-fixed-bottom p-4">
+        <span class="icon" data-name="GitHub">
+            <a href="https://github.com/orgs/Swondi/repositories" target="_blank">
+                <i class="lab la-github la-light"></i>
+            </a>
+            <span class="mx-3 is-size-5 icon-text general-text">GitHub</span>
+        </span>
+        <span class="icon" data-name="GitLab">
+            <a href="https://gitlab.com/Swondi" target="_blank">
+                <i class="lab la-gitlab la-light"></i>
+            </a>
+            <span class="mx-3 is-size-5 icon-text general-text">GitLab</span>
+        </span>
+        <span class="icon" data-name="Instagram">
+            <a href="" target="_blank">
+                <i class="lab la-instagram la-light"></i>
+            </a>
+            <span class="mx-3 is-size-5 icon-text general-text">Instagram</span>
+        </span>
+        <span class="icon" data-name="Email">
+            <a href="" target="_blank">
+                <i class="las la-envelope la-light"></i>
+            </a>
+            <span class="mx-3 is-size-5 icon-text general-text">Email</span>
+        </span>
+    </footer>
+</body>
+</html>
