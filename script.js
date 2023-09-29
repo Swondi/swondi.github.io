@@ -9,7 +9,7 @@ burgerButton.addEventListener('click', () => {
 
 /* Main countdown */
 const countdownElement = document.getElementById("countdown");
-const endDate = new Date(Date.parse('30 Sep 2023 12:00:00 GMT'));
+const endDate = new Date(Date.parse('15 Oct 2023 12:00:00 GMT'));
 const startDate = new Date(Date.parse('1 Jul 2023 12:00:00 GMT'));
 
 const backgroundCircle = document.getElementById('background-circle')
@@ -234,7 +234,7 @@ lightModeButton.addEventListener('click', () => {
 
 /* Click progress bar/circle */
 const dueEvent = 'Grand Opening'
-const dueDate = '31 - 09 - 2023'
+const dueDate = '15 - 10 - 2023'
 
 const toggleDueDate = () => {
   const currentDate = backgroundLine.getAttribute('data-date')
